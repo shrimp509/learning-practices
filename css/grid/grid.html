@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Grid Examples</title>
+    <style media="screen">
+      code {
+        font-size: 20px;
+      }
+
+      .example-container1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 2fr;
+      }
+
+      .item {
+        font-size: 50px;
+        color: black;
+      }
+
+      .e1-item1 {
+        background-color: green;
+      }
+      .e1-item2 {
+        background-color: yellow;
+      }
+      .e1-item3 {
+        background-color: red;
+      }
+      .e1-item4 {
+        background-color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Example1: grid-template-columns | grid-template-rows</h1>
+    <ul>
+      <li>fr 為 grid 的單位，全名為 <strong>Fr</strong>action</li>
+      <li>放幾個，就是幾欄/幾列 (搭配 example1 的程式碼比較好理解)</li>
+      <li><code>grid-template-columns: 1fr 1fr 2fr;</code><br>
+        代表有三欄，且第一、二欄的權重是 1；第三欄的權重是 2</li>
+    </ul>
+    <div class="example-container1">
+      <div class="item e1-item1">1</div>
+      <div class="item e1-item2">2</div>
+      <div class="item e1-item3">3</div>
+      <div class="item e1-item4">4</div>
+    </div>
+    <hr>
+    <div class="example-container2">
+
+    </div>
+  </body>
+</html>
